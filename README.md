@@ -16,8 +16,9 @@ Kamu akan memakai API ini untuk 4 halaman di desain:
 
 <br>
 <br>
+<br>
 
-# **Persiapan**
+## **Persiapan**
 
 Pastikan sudah terpasang:
 
@@ -27,14 +28,10 @@ Pastikan sudah terpasang:
 ---
 
 <br>
-<br>
-<br>
 
-# **Cara Menjalankan API ini**
+## **Cara Menjalankan API ini**
 
 Ikuti langkah ini secara berurutan
-
-<br>
 
 ### **1. Install/update dependency**
 
@@ -42,9 +39,6 @@ Ikuti langkah ini secara berurutan
 npm install
 ```
 ---
-
-<br>
-<br>
 
 ### **2. Buat file `.env`**
 
@@ -54,7 +48,6 @@ cp .env.example .env
 
 Di terminal (CMD): `copy .env.example .env`
 
-<br>
 
 Lalu buka `.env` dan sesuaikan dengan MySQL-mu:
 
@@ -75,16 +68,11 @@ JWT_EXPIRES_IN=1d
 
 ---
 
-<br>
-<br>
-
 ### **3. Jalankan migration** (membuat database + tabel otomatis)
 
 ```bash
 npm run migrate
 ```
-
-<br>
 
 Kalau berhasil, kamu akan melihat output seperti ini di terminal:
 
@@ -95,8 +83,6 @@ Kalau berhasil, kamu akan melihat output seperti ini di terminal:
 ```
 
 ---
-<br>
-<br>
 
 ### **4. Isi data contoh**
 
@@ -112,9 +98,6 @@ Akun demo yang dibuat:
 
 ---
 
-<br>
-<br>
-
 ### **5. jalankan project / server**
 
 ```bash
@@ -127,11 +110,6 @@ Dokumentasi interaktifnya ada di `http://localhost:3000/api-docs` (lihat [Dokume
 ---
 
 <br>
-<br>
-<br>
-<br>
-<br>
-
 
 # **Perintah lain**
 
@@ -144,8 +122,6 @@ Dokumentasi interaktifnya ada di `http://localhost:3000/api-docs` (lihat [Dokume
 | `npm run migrate:fresh` | Hapus semua tabel lalu buat ulang (⚠️ data hilang) |
 | `npm run seed` | Mengisi data contoh |
 
-<br>
-<br>
 <br>
 
 
@@ -167,8 +143,6 @@ Di sini kamu bisa melihat semua endpoint dan **mencobanya langsung** tanpa Postm
 
 ---
 
-<br>
-<br>
 <br>
 
 # **Daftar Endpoint**
@@ -226,13 +200,7 @@ Query yang bisa dipakai:
 | GET | `/profile` | 🔒 | Lihat data profil |
 | PUT | `/profile` | 🔒 | Ubah nama, phone, address, avatar |
 
-<br>
-
 ---
-
-<br>
-<br>
-<br>
 
 # **Kode Status HTTP**
 
@@ -248,8 +216,6 @@ Query yang bisa dipakai:
 
 ---
 
-<br>
-<br>
 <br>
 
 # **Struktur Database**
@@ -292,8 +258,6 @@ erDiagram
 > 🔒 Password **tidak pernah** disimpan sebagai teks biasa, tapi di-hash dengan `bcrypt`.
 ---
 
-<br>
-<br>
 <br>
 
 # **Struktur Folder**
