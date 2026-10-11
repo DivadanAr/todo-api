@@ -68,7 +68,7 @@ JWT_EXPIRES_IN=1d
 
 ---
 
-### **3. Jalankan migration** (membuat database + tabel otomatis)
+### **3. Jalankan migration**
 
 ```bash
 npm run migrate
@@ -94,7 +94,7 @@ Akun demo yang dibuat:
 
 | Email | Password |
 |---|---|
-| `ralph@example.com` | `password123` |
+| `email@gmail.com` | `password123` |
 
 ---
 
