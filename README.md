@@ -16,7 +16,6 @@ API yang terdapat pada project ini adalah:
 
 <br>
 <br>
-<br>
 
 ## **Persiapan**
 
@@ -240,7 +239,6 @@ erDiagram
         string title
         text description
         enum type "task / note"
-        enum color "red blue green purple"
         datetime start_at
         datetime end_at
         boolean reminder

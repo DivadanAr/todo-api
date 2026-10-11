@@ -6,7 +6,6 @@ module.exports = {
       title VARCHAR(150) NOT NULL,
       description TEXT NULL,
       type ENUM('task', 'note') NOT NULL DEFAULT 'task',
-      color ENUM('red', 'blue', 'green', 'purple') NOT NULL DEFAULT 'red',
       start_at DATETIME NULL,
       end_at DATETIME NULL,
       reminder TINYINT(1) NOT NULL DEFAULT 0,

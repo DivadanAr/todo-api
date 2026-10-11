@@ -27,14 +27,14 @@ async function main() {
   const nextDay = dateOffset(1);
 
   const todos = [
-    [uid, 'Design Wireframe', null, 'task', 'red', `${today} 08:00:00`, `${today} 09:00:00`, 1],
-    [uid, 'Meet with client', null, 'task', 'blue', `${today} 10:00:00`, `${today} 11:00:00`, 1],
-    [uid, "April's content selection", "In april's content selection...", 'note', 'purple', null, null, 0],
-    [uid, 'Brainstorming session - ideas', null, 'task', 'green', `${nextDay} 08:00:00`, `${nextDay} 17:00:00`, 1],
+    [uid, 'Design Wireframe', null, 'task', `${today} 08:00:00`, `${today} 09:00:00`, 1],
+    [uid, 'Meet with client', null, 'task', `${today} 10:00:00`, `${today} 11:00:00`, 1],
+    [uid, "April's content selection", "In april's content selection...", 'note', null, null, 0],
+    [uid, 'Brainstorming session - ideas', null, 'task', `${nextDay} 08:00:00`, `${nextDay} 17:00:00`, 1],
   ];
   for (const t of todos) {
     await pool.query(
-      'INSERT INTO todos (user_id, title, description, type, color, start_at, end_at, reminder) VALUES (?,?,?,?,?,?,?,?)',
+      'INSERT INTO todos (user_id, title, description, type, start_at, end_at, reminder) VALUES (?,?,?,?,?,?,?)',
       t
     );
   }

@@ -2,14 +2,12 @@ const pool = require('../config/db');
 const { dateLabel, parseDateTime } = require('../utils/helpers');
 
 const TYPES = ['task', 'note'];
-const COLORS = ['red', 'blue', 'green', 'purple'];
 
 const format = (t) => ({
   id: t.id,
   title: t.title,
   description: t.description,
   type: t.type,
-  color: t.color,
   start_at: t.start_at,
   end_at: t.end_at,
   reminder: !!t.reminder,
@@ -24,16 +22,14 @@ function validate(body, { partial }) {
     if (!body.title || !String(body.title).trim()) return { error: 'Title wajib diisi' };
     values.title = String(body.title).trim();
   }
+  
   if (body.description !== undefined) values.description = body.description || null;
 
   if (body.type !== undefined) {
     if (!TYPES.includes(body.type)) return { error: `type harus salah satu dari: ${TYPES.join(', ')}` };
     values.type = body.type;
   }
-  if (body.color !== undefined) {
-    if (!COLORS.includes(body.color)) return { error: `color harus salah satu dari: ${COLORS.join(', ')}` };
-    values.color = body.color;
-  }
+
   for (const key of ['start_at', 'end_at']) {
     if (body[key] !== undefined) {
       const parsed = parseDateTime(body[key]);
