@@ -120,6 +120,8 @@ Dokumentasi interaktifnya ada di `http://localhost:3000/api-docs` (lihat [Dokume
 | `npm run migrate:fresh` | Hapus semua tabel lalu buat ulang (⚠️ data hilang) |
 | `npm run seed` | Mengisi data contoh |
 
+---
+
 <br>
 
 
