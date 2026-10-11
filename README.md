@@ -16,7 +16,6 @@ Kamu akan memakai API ini untuk 4 halaman di desain:
 
 <br>
 <br>
-<br>
 
 # **Persiapan**
 
