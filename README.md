@@ -15,6 +15,8 @@ Kamu akan memakai API ini untuk 4 halaman di desain:
 ---
 
 <br>
+<br>
+<br>
 
 ## **Persiapan**
 
@@ -109,7 +111,7 @@ Dokumentasi interaktifnya ada di `http://localhost:3000/api-docs` (lihat [Dokume
 
 <br>
 
-# **Perintah lain**
+## **Perintah lain**
 
 | Perintah | Fungsi |
 |---|---|
@@ -120,12 +122,10 @@ Dokumentasi interaktifnya ada di `http://localhost:3000/api-docs` (lihat [Dokume
 | `npm run migrate:fresh` | Hapus semua tabel lalu buat ulang (⚠️ data hilang) |
 | `npm run seed` | Mengisi data contoh |
 
----
-
 <br>
 
 
-# **Dokumentasi Swagger**
+## **Dokumentasi Swagger**
 
 Setelah server berhasil dijalankan, buka di browser:
 
@@ -145,14 +145,14 @@ Di sini kamu bisa melihat semua endpoint dan **mencobanya langsung** tanpa Postm
 
 <br>
 
-# **Daftar Endpoint**
+## **Daftar Endpoint**
 
 Base URL: `http://localhost:3000/api`
 
 🔓 = tanpa token <br>
 🔒 = wajib token Bearer
 
-## **Auth**
+### **Auth**
 
 | Method | URL | Akses | Fungsi |
 |---|---|:---:|---|
@@ -161,7 +161,7 @@ Base URL: `http://localhost:3000/api`
 
 <br>
 
-## **Todo**
+### **Todo**
 
 | Method | URL | Akses | Fungsi |
 |---|---|:---:|---|
@@ -183,7 +183,7 @@ Query yang bisa dipakai:
 
 <br>
 
-## **Notifikasi**
+### **Notifikasi**
 
 | Method | URL | Akses | Fungsi |
 |---|---|:---:|---|
@@ -193,7 +193,7 @@ Query yang bisa dipakai:
 
 <br>
 
-## **Profil**
+### **Profil**
 
 | Method | URL | Akses | Fungsi |
 |---|---|:---:|---|
@@ -202,7 +202,7 @@ Query yang bisa dipakai:
 
 ---
 
-# **Kode Status HTTP**
+## **Kode Status HTTP**
 
 | Kode | Artinya | Contoh |
 |:---:|---|---|
@@ -218,7 +218,7 @@ Query yang bisa dipakai:
 
 <br>
 
-# **Struktur Database**
+## **Struktur Database**
 
 ```mermaid
 erDiagram
@@ -260,7 +260,7 @@ erDiagram
 
 <br>
 
-# **Struktur Folder**
+## **Struktur Folder**
 
 ```
 todo-api/
@@ -285,7 +285,7 @@ todo-api/
 │   │   └── helpers.js
 │   └── database/
 │       ├── migrate.js          # Menjalankan migration
-│       ├── seed.js             # Data contoh
+│       ├── seed.js             # Data contoha
 │       └── migrations/         # Skema tabel
 ├── .env.example
 └── package.json
