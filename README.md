@@ -2,7 +2,7 @@
 
 Repo ini adalah **API siap pakai** supaya kamu bisa fokus belajar **menerapkan login di tampilan Flutter**, tanpa pusing bikin backend dari nol.
 
-Kamu akan memakai API ini untuk 4 halaman di desain:
+API yang terdapat pada project ini adalah:
 
 | API | Deskripsi |
 |---|---|
